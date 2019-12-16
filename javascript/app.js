@@ -1,4 +1,4 @@
-getJSON("/commands.json", (err, cmds) => {
+getJSON("commands.json", (err, cmds) => {
 
   let app = new Vue({
     el: '#app',
