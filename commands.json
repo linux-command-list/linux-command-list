@@ -1,0 +1,23 @@
+[
+    {
+      "cmd": "du -sh",
+      "description": "Show size of current folder in human readable format.",
+      "usage": "",
+      "example": "",
+      "keywords": ["directory", "folder", "size"]
+    },
+    {
+      "cmd": "ls -la",
+      "description": "Show every file with their permissions.",
+      "usage": "",
+      "example": "",
+      "keywords": ["file", "permission", "list"]
+    }, 
+    {
+      "cmd": "ls",
+      "description": "Show every file in the current directory.",
+      "usage": "",
+      "example": "",
+      "keywords": ["file", "permission", "list"]
+    }
+]

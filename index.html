@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Linux Commands</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/debug.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+  <script src="./commands.json"></script>
 </head>
+
 <body>
-  
+  <div id="app">
+    <h1>Linux Commands!</h1>
+    <div class="search-wrapper center-xs">
+      <input type="text" v-model="search" placeholder="Search.." />
+    </div>
+    <main class="wrap">
+      <div class="row center-xs">
+        <article v-for="command in filteredList" class="command col-xs-12 col-sm-6 col-md-3">
+          <div class="command-card">
+            <h2>{{command.cmd}}</h2>
+            <div v-if="command.description != ''">
+              <h3>Description</h3>
+              <p>{{command.description}}</p>
+            </div>
+            <div v-if="command.usage != ''">
+              <h3>Usage</h4>
+              <p>{{command.usage}}</p>
+            </div>
+            <div v-if="command.example != ''">
+              <h3>Example</h3>
+              <p>{{command.example}}</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script src="./javascript/app.js"></script>
 </body>
+
 </html>
