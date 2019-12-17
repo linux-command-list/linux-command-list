@@ -9,6 +9,8 @@ getJSON("commands.json", (err, cmds) => {
     computed: {
       filteredList() {
 
+        search = this.search.trim()
+
         function compare(a, b) {
           if (a.cmd < b.cmd)
             return -1;
@@ -19,11 +21,11 @@ getJSON("commands.json", (err, cmds) => {
 
         return this.commands.filter(cmd => {
 
-          return searchIs(this.search, cmd.cmd)
-          || searchIncludes(this.search, cmd.cmd) 
-          || searchIncludes(this.search, cmd.description)  
+          return searchIs(search, cmd.cmd)
+          || searchIncludes(search, cmd.cmd) 
+          || searchIncludes(search, cmd.description)  
           // || searchIncludes(this.search, cmd.example) 
-          || keywordsIncludes(cmd.keywords, this.search)
+          || keywordsIncludes(cmd.keywords, search)
 
         }).sort(compare)
       }
