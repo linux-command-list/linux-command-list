@@ -23,11 +23,12 @@ getJSON("commands.json", (err, cmds) => {
 
         return this.commands.filter(cmd => {
 
-          return searchIs(search, cmd.cmd)
-          || searchIncludes(search, cmd.cmd) 
-          || searchIncludes(search, cmd.description)  
-          // || searchIncludes(this.search, cmd.example) 
-          || keywordsIncludes(cmd.keywords, search)
+          return searchIs(search, cmd.cmd) ||
+            searchIncludes(search, cmd.cmd) ||
+            searchIncludes(search, cmd.description)
+            // || searchIncludes(this.search, cmd.example) 
+            ||
+            keywordsIncludes(cmd.keywords, search)
 
         }).sort(compare)
       }
@@ -37,7 +38,7 @@ getJSON("commands.json", (err, cmds) => {
 })
 
 function searchIs(search, text) {
-  if(text.toLowerCase().includes(search.toLowerCase)) return true
+  if (text.toLowerCase().includes(search.toLowerCase)) return true
 }
 
 function searchIncludes(search, text) {
@@ -46,7 +47,7 @@ function searchIncludes(search, text) {
   search = search.split(" ")
   text.forEach(txt => {
     search.forEach(s => {
-      if(txt.toLowerCase().includes(s.toLowerCase())) ret = true
+      if (txt.toLowerCase().includes(s.toLowerCase())) ret = true
     })
   })
   return ret
@@ -57,7 +58,7 @@ function keywordsIncludes(keywords, text) {
   text = text.split(" ")
   text.forEach(txt => {
     keywords.forEach(keyword => {
-      if(keyword.toLowerCase().includes(txt.toLowerCase())) ret = true
+      if (keyword.toLowerCase().includes(txt.toLowerCase())) ret = true
     })
   })
   return ret
