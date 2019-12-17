@@ -16,5 +16,11 @@
       "description": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds.",
       "usage": "wget -v -t <TRIES> --timeout <TIMEOUT_IN_SECONDS> -i <FILENAME>",
       "keywords": ["download", "list", "foreach"]
+    }, 
+    {
+      "cmd": "awk -F ',' '{print $1}' list.csv",
+      "description": "Print the first column of a csv or other files with a similar structure.",
+      "usage": "awk -F '<SEPERATOR>' '{print $<COLUMN_NUMBER>}' <FILE>",
+      "keywords": ["data", "list", "bigdata", "analyze", "search"]
     }
 ]
