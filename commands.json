@@ -26,5 +26,12 @@
     "description": "",
     "usage": "awk -F '<SEPERATOR>' '{print $<COLUMN_NUMBER>}' <FILE>",
     "keywords": ["data", "list", "bigdata", "analyze", "search"]
+  },
+  {
+    "cmd": "find . -type f -name *.txt",
+    "title": "Find all fils which match the search in the current directory.",
+    "description": "<SEARCH> supports wildcards.",
+    "usage": "find . -type f -name <SEARCH>",
+    "keywords": ["find", "list", "get", "search"]
   }
 ]
