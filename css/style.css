@@ -34,7 +34,7 @@ html,
 }
 
 .command-card:hover {
-  box-shadow: 0 10px 20px 0 rgba(168, 182, 191, .6);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
   transform: translateY(-1px);
 }
 
