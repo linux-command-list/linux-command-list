@@ -1,3 +1,5 @@
+Vue.config.devtools = false // Set this to true to enable the Vue DevTools browser extension.
+
 getJSON("commands.json", (err, cmds) => {
 
   let app = new Vue({
