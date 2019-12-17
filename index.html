@@ -29,12 +29,12 @@
             <div v-if="command.title != ''">
               <h2>{{command.title}}</h3>
             </div>
-            <div v-if="command.description != ''">
-              <pre class="description">{{command.description}}</pre>
-            </div>
             <h3>
               <pre><code class="language-shell">{{command.cmd}}</code></pre>
             </h3>
+            <div v-if="command.description != ''">
+              <pre class="description">{{command.description}}</pre>
+            </div>
             <div v-if="command.usage != ''">
               <p>
                 <pre><code class="language-shell">{{command.usage}}</code></pre>
