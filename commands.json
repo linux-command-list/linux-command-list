@@ -1,42 +1,42 @@
 [
   {
     "cmd": "du -sh",
-    "title": "Show size of current folder in human readable format.",
+    "title": "Show size of current folder in human readable format",
     "description": "",
     "usage": "",
     "keywords": ["directory", "folder", "size"]
   },
   {
     "cmd": "ls -la",
-    "title": "Show every file with their permissions.",
+    "title": "Show every file with their permissions",
     "description": "",
     "usage": "",
     "keywords": ["file", "permission", "list"]
   },
   {
     "cmd": "wget -v -t 2 --timeout 2 -i list.txt",
-    "title": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds.",
+    "title": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds",
     "description": "",
     "usage": "wget -v -t <TRIES> --timeout <TIMEOUT_IN_SECONDS> -i <FILENAME>",
     "keywords": ["download", "list", "foreach"]
   },
   {
     "cmd": "awk -F ',' '{print $1}' list.csv",
-    "title": "Print the first column of a csv or other files with a similar structure.",
+    "title": "Print the first column of a csv or other files with a similar structure",
     "description": "",
     "usage": "awk -F '<SEPERATOR>' '{print $<COLUMN_NUMBER>}' <FILE>",
     "keywords": ["data", "list", "bigdata", "analyze", "search"]
   },
   {
     "cmd": "find . -type f -name *.txt",
-    "title": "Find all fils which match the search in the current directory.",
+    "title": "Find all fils which match the search in the current directory",
     "description": "<SEARCH> supports wildcards.",
     "usage": "find . -type f -name <SEARCH>",
     "keywords": ["find", "list", "get", "search"]
   },
   {
     "cmd": "less file.txt",
-    "title": "Display the content of a file with up and down navigation.",
+    "title": "Display the content of a file with up and down navigation",
     "description": "",
     "usage": "less <FILE>",
     "keywords": ["find", "list", "search"]
