@@ -24,18 +24,19 @@
       <div class="row center-xs">
         <article v-for="command in filteredList" class="command col-xs-12 col-sm-6 col-md-3">
           <div class="command-card">
-            <h2>
-              <pre><code class="language-shell">{{command.cmd}}</code></pre>
-            </h2>
-            <div v-if="command.description != ''">
-              <h3>Description</h3>
-              <p>{{command.description}}</p>
+            <div v-if="command.title != ''">
+              <h2>{{command.title}}</h3>
             </div>
+            <div v-if="command.description != ''">
+              <pre class="description">{{command.description}}</pre>
+            </div>
+            <h3>
+              <pre><code class="language-shell">{{command.cmd}}</code></pre>
+            </h3>
             <div v-if="command.usage != ''">
-              <h3>Usage</h4>
-                <p>
-                  <pre>{{command.usage}}</pre>
-                </p>
+              <p>
+                <pre><code class="language-shell">{{command.usage}}</code></pre>
+              </p>
             </div>
           </div>
         </article>
