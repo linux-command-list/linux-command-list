@@ -3,21 +3,18 @@
       "cmd": "du -sh",
       "description": "Show size of current folder in human readable format.",
       "usage": "",
-      "example": "",
       "keywords": ["directory", "folder", "size"]
     },
     {
       "cmd": "ls -la",
       "description": "Show every file with their permissions.",
       "usage": "",
-      "example": "",
       "keywords": ["file", "permission", "list"]
     }, 
     {
-      "cmd": "ls",
-      "description": "Show every file in the current directory.",
-      "usage": "",
-      "example": "",
-      "keywords": ["file", "permission", "list"]
+      "cmd": "wget -v -t 2 --timeout 2 -i list.txt",
+      "description": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds.",
+      "usage": "wget -v -t <TRIES> --timeout <TIMEOUT_IN_SECONDS> -i <FILENAME>",
+      "keywords": ["download", "list", "foreach"]
     }
 ]

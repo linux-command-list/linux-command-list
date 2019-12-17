@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/debug.css" />
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 </head>
 
 <body>
@@ -22,18 +24,18 @@
       <div class="row center-xs">
         <article v-for="command in filteredList" class="command col-xs-12 col-sm-6 col-md-3">
           <div class="command-card">
-            <h2>{{command.cmd}}</h2>
+            <h2>
+              <pre><code class="language-shell">{{command.cmd}}</code></pre>
+            </h2>
             <div v-if="command.description != ''">
               <h3>Description</h3>
               <p>{{command.description}}</p>
             </div>
             <div v-if="command.usage != ''">
               <h3>Usage</h4>
-              <p>{{command.usage}}</p>
-            </div>
-            <div v-if="command.example != ''">
-              <h3>Example</h3>
-              <p>{{command.example}}</p>
+                <p>
+                  <pre>{{command.usage}}</pre>
+                </p>
             </div>
           </div>
         </article>
@@ -42,6 +44,7 @@
   </div>
 
   <script src="./javascript/app.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

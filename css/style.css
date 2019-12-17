@@ -32,7 +32,7 @@ html,
   text-shadow: 2px 2px 5px #777;
 }
 
-.command-card h3 {}
+/* .command-card h3 {} */
 
 .command-card:hover {
   box-shadow: 0 10px 20px 0 rgba(168, 182, 191, .6);
@@ -72,11 +72,6 @@ html,
 .wrap {
   margin: 0 auto;
   max-width: 1500px;
-}
-
-html,
-#app {
-  background-color: white;
 }
 
 input {

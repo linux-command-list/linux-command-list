@@ -22,7 +22,7 @@ getJSON("commands.json", (err, cmds) => {
           return searchIs(this.search, cmd.cmd)
           || searchIncludes(this.search, cmd.cmd) 
           || searchIncludes(this.search, cmd.description)  
-          || searchIncludes(this.search, cmd.example) 
+          // || searchIncludes(this.search, cmd.example) 
           || keywordsIncludes(cmd.keywords, this.search)
 
         }).sort(compare)
