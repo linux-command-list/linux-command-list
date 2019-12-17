@@ -33,5 +33,12 @@
     "description": "<SEARCH> supports wildcards.",
     "usage": "find . -type f -name <SEARCH>",
     "keywords": ["find", "list", "get", "search"]
+  },
+  {
+    "cmd": "less file.txt",
+    "title": "Display the content of a file with up and down navigation.",
+    "description": "",
+    "usage": "less <FILE>",
+    "keywords": ["find", "list", "search"]
   }
 ]
