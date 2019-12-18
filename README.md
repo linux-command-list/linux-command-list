@@ -42,3 +42,16 @@ Adding a command is as simple as copying the last command at the end of the file
 +    "keywords": ["keywords", "of", "the", "new", "command"]
 +  }
 ```
+
+Or if you like to copy an empty template:
+
+```json
+,
+  {
+    "cmd": "",
+    "title": "",
+    "description": "",
+    "usage": "",
+    "keywords": [""]
+  }
+```
