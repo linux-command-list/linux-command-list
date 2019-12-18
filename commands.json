@@ -14,65 +14,65 @@
   },
   {
     "title": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds",
-    "usage": "wget -v -t <TRIES> --timeout <TIMEOUT_IN_SECONDS> -i <FILENAME>",
+    "usage": "wget -v -t <var>TRIES</var> --timeout <var>TIMEOUT_IN_SECONDS</var> -i <var>FILENAME</var>",
     "description": "",
     "cmd": "wget -v -t 2 --timeout 2 -i list.txt",
     "keywords": ["download", "list", "foreach"]
   },
   {
     "title": "Print the first column of a csv or other files with a similar structure",
-    "usage": "awk -F '<SEPERATOR>' '{print $<COLUMN_NUMBER>}' <FILE>",
+    "usage": "awk -F '<var>SEPERATOR</var>' '{print $<var>COLUMN_NUMBER</var>}' <var>FILE</var>",
     "description": "",
     "cmd": "awk -F ',' '{print $1}' list.csv",
     "keywords": ["data", "list", "bigdata", "analyze", "search"]
   },
   {
     "title": "Find all fils which match the search in the current directory",
-    "usage": "find . -type f -name <SEARCH>",
-    "description": "<SEARCH> supports wildcards.",
+    "usage": "find . -type f -name <var>SEARCH</var>",
+    "description": "<var>SEARCH</var> supports wildcards.",
     "cmd": "find . -type f -name *.txt",
     "keywords": ["find", "list", "get", "search"]
   },
   {
     "title": "Display the content of a file with up and down navigation",
-    "usage": "less <FILE>",
+    "usage": "less <var>FILE</var>",
     "description": "",
     "cmd": "less file.txt",
     "keywords": ["find", "list", "search"]
   },
   {
     "title": "Output the content of a file",
-    "usage": "cat <FILE>",
+    "usage": "cat <var>FILE</var>",
     "description": "",
     "cmd": "cat file.txt",
     "keywords": ["display", "show"]
   },
   {
     "title": "Search for content in a file (with color output and scrollable pages)",
-    "usage": "grep --color=always '<SEARCH>' <FILE> | less -R",
+    "usage": "grep --color=always '<var>SEARCH</var>' <var>FILE</var> | less -R",
     "description": "",
     "cmd": "grep --color=always 'search me' file.txt | less -R",
     "keywords": ["search", "analyze", "data"]
   },
   {
     "title": "Search for content in a file (with color output)",
-    "usage": "grep --color=always '<SEARCH>' <FILE>",
+    "usage": "grep --color=always '<var>SEARCH</var>' <var>FILE</var>",
     "description": "",
     "cmd": "grep --color=always 'search me' file.txt",
     "keywords": ["search", "analyze", "data"]
   },
   {
     "title": "Search for content in a file",
-    "usage": "grep '<SEARCH>' <FILE>",
+    "usage": "grep '<var>SEARCH</var>' <var>FILE</var>",
     "description": "",
     "cmd": "grep 'search me' file.txt",
     "keywords": ["search", "analyze", "data"]
   },
   {
     "title": "Show which process is using a port",
-    "usage": "netstat -ltnp | grep ':<PORT_NUMBER> '",
+    "usage": "netstat -ltnp | grep ':<var>PORT_NUMBER</var> '",
     "description": "",
     "cmd": "netstat -ltnp | grep ':80 '",
-    "keywords": ["listen", "listening", "ps", "pid"]
+    "keywords": ["listening", "ps", "pid"]
   }
 ]

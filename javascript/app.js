@@ -13,6 +13,9 @@ getJSON("commands.json", (err, cmds) => {
 
         searchTerm = this.search.trim()
 
+        let computedCommands = JSON.parse(JSON.stringify(this.commands).replace(/\<var\>/g, '<[').replace(/\<\/var\>/g, ']>'))
+        console.log(computedCommands)
+
         function compare(a, b) {
           if (a.cmd < b.cmd)
             return -1;
@@ -21,7 +24,7 @@ getJSON("commands.json", (err, cmds) => {
           return 0;
         }
 
-        return this.commands.filter(cmd => {
+        return computedCommands.filter(cmd => {
 
           return search(searchTerm, cmd)
 
