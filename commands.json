@@ -10,7 +10,7 @@
     "cmd": "ls -la",
     "title": "Show every file with their permissions",
     "description": "",
-    "usage": "",
+    "usage": "ls -la",
     "keywords": ["file", "permission", "list"]
   },
   {
