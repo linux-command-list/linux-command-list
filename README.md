@@ -1,4 +1,4 @@
-# linux-commands
+# Linux Command List
 
 > Useful Linux commands for everyday use!
 
