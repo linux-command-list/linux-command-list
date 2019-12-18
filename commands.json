@@ -67,5 +67,12 @@
     "description": "",
     "cmd": "grep 'search me' file.txt",
     "keywords": ["search", "analyze", "data"]
+  },
+  {
+    "title": "Show which process is using a port",
+    "usage": "netstat -ltnp | grep ':<PORT_NUMBER> '",
+    "description": "",
+    "cmd": "netstat -ltnp | grep ':80 '",
+    "keywords": ["listen", "listening", "ps", "pid"]
   }
 ]
