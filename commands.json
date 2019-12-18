@@ -3,7 +3,7 @@
     "cmd": "du -sh",
     "title": "Show size of current folder in human readable format",
     "description": "",
-    "usage": "",
+    "usage": "du -sh",
     "keywords": ["directory", "folder", "size"]
   },
   {
