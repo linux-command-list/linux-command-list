@@ -40,5 +40,12 @@
     "description": "",
     "usage": "less <FILE>",
     "keywords": ["find", "list", "search"]
+  },
+  {
+    "cmd": "cat file.txt",
+    "title": "Output the content of a file",
+    "description": "",
+    "usage": "cat <FILE>",
+    "keywords": ["display", "show", "search"]
   }
 ]
