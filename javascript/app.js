@@ -1,4 +1,4 @@
-Vue.config.devtools = false // Set this to true to enable the Vue DevTools browser extension.
+Vue.config.devtools = true // Set this to true to enable the Vue DevTools browser extension.
 
 getJSON("commands.json", (err, cmds) => {
 
@@ -11,7 +11,7 @@ getJSON("commands.json", (err, cmds) => {
     computed: {
       filteredList() {
 
-        search = this.search.trim()
+        searchTerm = this.search.trim()
 
         function compare(a, b) {
           if (a.cmd < b.cmd)
@@ -23,11 +23,7 @@ getJSON("commands.json", (err, cmds) => {
 
         return this.commands.filter(cmd => {
 
-          return searchIs(search, cmd.cmd) ||
-            searchIncludes(search, cmd.cmd) ||
-            searchIncludes(search, cmd.description) ||
-            searchIncludes(search, cmd.title) ||
-            keywordsIncludes(cmd.keywords, search)
+          return search(searchTerm, cmd)
 
         }).sort(compare)
       }
@@ -36,31 +32,27 @@ getJSON("commands.json", (err, cmds) => {
 
 })
 
-function searchIs(search, text) {
-  if (text.toLowerCase().includes(search.toLowerCase)) return true
-}
+function search(search, cmd) {
 
-function searchIncludes(search, text) {
-  ret = false
-  text = text.split(" ")
-  search = search.split(" ")
-  text.forEach(txt => {
-    search.forEach(s => {
-      if (txt.toLowerCase().includes(s.toLowerCase())) ret = true
-    })
-  })
-  return ret
-}
+  ret = true
 
-function keywordsIncludes(keywords, text) {
-  ret = false
-  text = text.split(" ")
-  text.forEach(txt => {
-    keywords.forEach(keyword => {
-      if (keyword.toLowerCase().includes(txt.toLowerCase())) ret = true
-    })
+  command = cmd.cmd.toLowerCase()
+  title = cmd.title.toLowerCase()
+  usage = cmd.usage.toLowerCase()
+  description = cmd.description.toLowerCase()
+  keywords = cmd.keywords
+
+  combined = `${command} ${title} ${usage} ${description} ${keywords.join(" ")}`
+  // console.log(combined)
+
+  search = search.toLowerCase().split(" ")
+
+  search.forEach(s => {
+    if(!combined.includes(s)) ret = false
   })
+
   return ret
+
 }
 
 function getJSON(url, callback) {
