@@ -45,7 +45,7 @@
     "usage": "cat <FILE>",
     "description": "",
     "cmd": "cat file.txt",
-    "keywords": ["display", "show", "search"]
+    "keywords": ["display", "show"]
   },
   {
     "title": "Search for content in a file (with color output and scrollable pages)",
