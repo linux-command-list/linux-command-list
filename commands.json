@@ -46,5 +46,19 @@
     "description": "",
     "cmd": "cat file.txt",
     "keywords": ["display", "show", "search"]
+  },
+  {
+    "title": "Search for content in a file (with color output and scrollable pages)",
+    "usage": "grep --color=always '<SEARCH>' <FILE> | less -R",
+    "description": "",
+    "cmd": "grep --color=always 'search me' file.txt | less -R",
+    "keywords": ["search", "analyze", "data"]
+  },
+  {
+    "title": "Search for content in a file (with color output)",
+    "usage": "grep --color=always '<SEARCH>' <FILE>",
+    "description": "",
+    "cmd": "grep --color=always 'search me' file.txt",
+    "keywords": ["search", "analyze", "data"]
   }
 ]
