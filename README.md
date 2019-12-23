@@ -10,7 +10,7 @@ You can search for commands and filter them.
 
 It's very simple to add a new command to the Website, so everyone with a bit of experience with git can do it.  
 You can even add a command over GitHub's web editor.  
-See more in the [`How to add a command`](#How_to_add_a_command) section.
+See more in the [`How to add a command`](#how-to-add-a-command) section.
 
 ## How to add a command
 
