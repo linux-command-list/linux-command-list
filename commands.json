@@ -72,7 +72,14 @@
     "title": "Show which process is using a port",
     "usage": "netstat -ltnp | grep ':<var>PORT_NUMBER</var> '",
     "description": "",
-    "cmd": "netstat -ltnp | grep ':80 '",
+    "cmd": "netstat -ltnp | grep ':80'",
     "keywords": ["listening", "ps", "pid"]
+  },
+  {
+    "title": "Restart all docker containers",
+    "usage": "docker restart $(docker ps -a -q)'",
+    "description": "",
+    "cmd": "docker restart $(docker ps -a -q)'",
+    "keywords": ["docker", "ps"]
   }
 ]
