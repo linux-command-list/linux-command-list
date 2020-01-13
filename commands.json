@@ -95,5 +95,12 @@
     "description": "Forcefully terminate a process.",
     "cmd": "kill -9 1337",
     "keywords": ["close", "terminate"]
+  },
+  {
+    "title": "Kill all processes",
+    "usage": "",
+    "description": "USE WITH CAUTION! Forcefully terminates every process except the kill process itself.",
+    "cmd": "kill -9 -1",
+    "keywords": ["close", "terminate"]
   }
 ]
