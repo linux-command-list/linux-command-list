@@ -102,5 +102,12 @@
     "description": "USE WITH CAUTION! Forcefully terminates every process except the kill process itself.",
     "cmd": "kill -9 -1",
     "keywords": ["close", "terminate"]
+  },
+  {
+    "title": "Print a calendar in the terminal",
+    "usage": "",
+    "description": "Prints an ASCII calendar to the console. Useful to see which day a date is.",
+    "cmd": "cal",
+    "keywords": [""]
   }
 ]
