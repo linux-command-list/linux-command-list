@@ -111,10 +111,10 @@
     "keywords": ["organizing"]
   },
   {
-    "title": "Show the history of a terminal/ssh session",
-    "usage": "",
+    "title": "Sort a file alphabetically",
+    "usage": "sort <var>FILENAME</var> > <var>FILENAME_SORTED</var>",
     "description": "",
-    "cmd": "history",
-    "keywords": ["print", "find", "command"]
+    "cmd": "sort file.txt",
+    "keywords": ["modify"]
   }
 ]
