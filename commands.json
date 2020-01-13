@@ -85,15 +85,15 @@
   {
     "title": "Print current path",
     "usage": "",
-    "description": "",
+    "description": "Prints the current directory path to the console.",
     "cmd": "pwd",
     "keywords": ["display", "show"]
   },
   {
     "title": "Force kill a process",
     "usage": "kill -9 <var>PROCESS_PID</var>",
-    "description": "",
-    "cmd": "pwd",
+    "description": "Forcefully terminate a process.",
+    "cmd": "kill -9 1337",
     "keywords": ["close", "terminate"]
   }
 ]
