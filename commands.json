@@ -116,5 +116,12 @@
     "description": "",
     "cmd": "sort file.txt",
     "keywords": ["modify"]
+  },
+  {
+    "title": "Show PID of a process by name",
+    "usage": "ps -e | grep <var>PROCESS_NAME</var>",
+    "description": "",
+    "cmd": "ps -e | grep bash",
+    "keywords": ["get", "print", "find", "search"]
   }
 ]
