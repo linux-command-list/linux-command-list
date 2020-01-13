@@ -104,10 +104,17 @@
     "keywords": ["close", "terminate"]
   },
   {
-    "title": "Print a calendar in the terminal",
+    "title": "Show a calendar in the terminal",
     "usage": "",
     "description": "Prints an ASCII calendar to the console. Useful to see which day a date is.",
     "cmd": "cal",
-    "keywords": [""]
+    "keywords": ["organizing"]
+  },
+  {
+    "title": "Show the history of a terminal/ssh session",
+    "usage": "",
+    "description": "",
+    "cmd": "history",
+    "keywords": ["print", "find", "command"]
   }
 ]
