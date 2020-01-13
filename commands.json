@@ -88,5 +88,12 @@
     "description": "",
     "cmd": "pwd",
     "keywords": ["display", "show"]
+  },
+  {
+    "title": "Force kill a process",
+    "usage": "kill -9 <var>PROCESS_PID</var>",
+    "description": "",
+    "cmd": "pwd",
+    "keywords": ["close", "terminate"]
   }
 ]
