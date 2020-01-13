@@ -1,5 +1,8 @@
 Vue.config.devtools = true // Set this to true to enable the Vue DevTools browser extension.
 
+const VAR_PREFIX = "<"
+const VAR_SUFFIX = ">"
+
 getJSON("commands.json", (err, cmds) => {
 
   let app = new Vue({
@@ -13,7 +16,7 @@ getJSON("commands.json", (err, cmds) => {
 
         searchTerm = this.search.trim()
 
-        let computedCommands = JSON.parse(JSON.stringify(this.commands).replace(/\<var\>/g, '<[').replace(/\<\/var\>/g, ']>'))
+        let computedCommands = JSON.parse(JSON.stringify(this.commands).replace(/\<var\>/g, VAR_PREFIX).replace(/\<\/var\>/g, VAR_SUFFIX))
         console.log(computedCommands)
 
         function compare(a, b) {

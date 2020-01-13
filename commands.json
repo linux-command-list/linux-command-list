@@ -84,9 +84,9 @@
   },
   {
     "title": "Print current path",
-    "usage": "",
+    "usage": "pwd",
     "description": "Prints the current directory path to the console.",
-    "cmd": "pwd",
+    "cmd": "",
     "keywords": ["display", "show"]
   },
   {
@@ -98,16 +98,16 @@
   },
   {
     "title": "Kill all processes",
-    "usage": "",
+    "usage": "kill -9 -1",
     "description": "USE WITH CAUTION! Forcefully terminates every process except the kill process itself.",
-    "cmd": "kill -9 -1",
+    "cmd": "",
     "keywords": ["close", "terminate"]
   },
   {
     "title": "Show a calendar in the terminal",
-    "usage": "",
+    "usage": "cal",
     "description": "Prints an ASCII calendar to the console. Useful to see which day a date is.",
-    "cmd": "cal",
+    "cmd": "",
     "keywords": ["organizing"]
   },
   {

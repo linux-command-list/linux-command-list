@@ -16,7 +16,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105814613-7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-105814613-7');
@@ -29,11 +32,24 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
 
   <div id="app">
+    <a class="github-button" href="https://github.com/marvinjwendt"
+      data-color-scheme="no-preference: light; light: light; dark: light;"
+      aria-label="Follow @marvinjwendt on GitHub">Follow @marvinjwendt</a>
+    <a class="github-button" href="https://github.com/linux-command-list/linux-command-list/fork"
+      data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-repo-forked"
+      aria-label="Fork linux-command-list/linux-command-list on GitHub">Fork</a>
+    <a class="github-button" href="https://github.com/sponsors/marvinjwendt"
+      data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-heart"
+      aria-label="Sponsor @marvinjwendt on GitHub">Sponsor</a>
+    <a class="github-button" href="https://github.com/linux-command-list/linux-command-list/issues"
+      data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-issue-opened"
+      aria-label="Issue linux-command-list/linux-command-list on GitHub">Issue</a>
     <h1>Linux Command List!</h1>
     <div class="search-wrapper center-xs">
       <input type="text" v-model="search" placeholder="Search.." />
@@ -45,13 +61,13 @@
             <div v-if="command.title != ''">
               <h2>{{command.title}}</h3>
             </div>
-            <h3>
+            <h3  v-if="command.usage != ''">
               <pre><code class="language-shell">{{command.usage}}</code></pre>
             </h3>
             <div v-if="command.description != ''">
               <pre class="description">{{command.description}}</pre>
             </div>
-            <div v-if="command.usage != ''">
+            <div v-if="command.cmd != ''">
               <p>
                 <pre><code class="language-shell">{{command.cmd}}</code></pre>
               </p>
@@ -63,7 +79,9 @@
   </div>
 
   <script src="./javascript/app.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 
 </html>
