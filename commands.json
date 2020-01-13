@@ -81,5 +81,12 @@
     "description": "",
     "cmd": "docker restart $(docker ps -a -q)'",
     "keywords": ["docker", "ps"]
+  },
+  {
+    "title": "Print current path",
+    "usage": "",
+    "description": "",
+    "cmd": "pwd",
+    "keywords": ["display", "show"]
   }
 ]
