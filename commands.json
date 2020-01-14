@@ -137,5 +137,12 @@
     "description": "",
     "cmd": "",
     "keywords": ["superuser", "admin", "redo", "history"]
+  },
+  {
+    "title": "Repeat command from history",
+    "usage": "!<var>HISTORY_NUMBER</var>",
+    "description": "Get the history number of a command with 'history'",
+    "cmd": "",
+    "keywords": ["superuser", "admin", "redo", "history"]
   }
 ]
