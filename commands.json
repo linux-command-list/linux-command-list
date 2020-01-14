@@ -195,9 +195,9 @@
     "keywords": ["docker-compose", "start", "down", "docker"]
   },
   {
-    "title": "Remove directory",
+    "title": "Remove empty directory",
     "usage": "rmdir <var>DIRECTORY_NAME</var>",
-    "description": "Removes given directory",
+    "description": "Removes given empty directory",
     "cmd": "",
     "keywords": ["directory", "remove", "delete", "filesystem"]
   }
