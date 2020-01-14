@@ -144,8 +144,7 @@
     "description": "Get the history number of a command with 'history'",
     "cmd": "",
     "keywords": ["redo"]
-  }
-  ,
+  },
   {
     "title": "Show history",
     "usage": "history",
