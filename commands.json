@@ -158,5 +158,12 @@
     "description": "Removes a directory forcefully.",
     "cmd": "rm -Rf folderName",
     "keywords": ["delete", "folder"]
+  },
+  {
+    "title": "Look through the process list",
+    "usage": "ps -e | less",
+    "description": "",
+    "cmd": "",
+    "keywords": ["display", "show", "list"]
   }
 ]
