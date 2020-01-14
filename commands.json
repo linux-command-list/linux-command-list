@@ -179,5 +179,19 @@
     "description": "",
     "cmd": "",
     "keywords": ["power", "off", "terminate", "cancel"]
+  },
+  {
+    "title": "Start a Docker-Compose routine",
+    "usage": "docker-compose up -d",
+    "description": "Start a Docker-Compose routine as well as detach session",
+    "cmd": "",
+    "keywords": ["docker-compose", "start", "up", "docker"]
+  },
+  {
+    "title": "Stop a Docker-Compose routine",
+    "usage": "docker-compose down -d",
+    "description": "Stop a Docker-Compose routine as well as detach session",
+    "cmd": "",
+    "keywords": ["docker-compose", "start", "down", "docker"]
   }
 ]
