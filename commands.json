@@ -129,7 +129,7 @@
     "usage": "free -h",
     "description": "Prints the free memory space in a human readable format.",
     "cmd": "",
-    "keywords": ["get", "print", "ram", "monitor"]
+    "keywords": ["get", "print", "ram", "monitor", "swap"]
   },
   {
     "title": "Repeat previous command with sudo rights",
