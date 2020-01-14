@@ -134,7 +134,7 @@
   {
     "title": "Repeat previous command with sudo rights",
     "usage": "sudo !!",
-    "description": "",
+    "description": "Repeats the previous command with sudo privileges",
     "cmd": "",
     "keywords": ["superuser", "admin", "redo", "history"]
   },
