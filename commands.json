@@ -151,5 +151,12 @@
     "description": "Shows the history of the terminal session.",
     "cmd": "",
     "keywords": ["history", "display"]
+  },
+  {
+    "title": "Forcefully remove a directory",
+    "usage": "rm -Rf <var>DIRECTORY_NAME</var>",
+    "description": "Removes a directory forcefully.",
+    "cmd": "rm -Rf folderName",
+    "keywords": ["delete", "folder"]
   }
 ]
