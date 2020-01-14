@@ -123,5 +123,19 @@
     "description": "",
     "cmd": "ps -e | grep bash",
     "keywords": ["get", "print", "find", "search"]
+  },
+  {
+    "title": "Show free memory space",
+    "usage": "free -h",
+    "description": "Prints the free memory space in a human readable format.",
+    "cmd": "",
+    "keywords": ["get", "print", "ram", "monitor"]
+  },
+  {
+    "title": "Repeat previous command with sudo rights",
+    "usage": "sudo !!",
+    "description": "",
+    "cmd": "",
+    "keywords": ["superuser", "admin", "redo", "history"]
   }
 ]
