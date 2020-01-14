@@ -193,5 +193,12 @@
     "description": "Stop a Docker-Compose routine as well as detach session",
     "cmd": "",
     "keywords": ["docker-compose", "start", "down", "docker"]
+  },
+  {
+    "title": "Remove directory",
+    "usage": "rmdir <var>DIRECTORY_NAME</var>",
+    "description": "Removes given directory",
+    "cmd": "",
+    "keywords": ["directory", "remove", "delete", "filesystem"]
   }
 ]
