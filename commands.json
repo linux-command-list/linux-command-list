@@ -172,5 +172,12 @@
     "description": "",
     "cmd": "",
     "keywords": ["power", "off", "terminate"]
+  },
+  {
+    "title": "Cancel a shutdown",
+    "usage": "shutdown -c",
+    "description": "",
+    "cmd": "",
+    "keywords": ["power", "off", "terminate", "cancel"]
   }
 ]
