@@ -165,5 +165,12 @@
     "description": "",
     "cmd": "",
     "keywords": ["display", "show", "list"]
+  },
+  {
+    "title": "Shutdown immediately",
+    "usage": "shutdown now",
+    "description": "",
+    "cmd": "",
+    "keywords": ["power", "off", "terminate"]
   }
 ]
