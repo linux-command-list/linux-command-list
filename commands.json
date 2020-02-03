@@ -206,6 +206,6 @@
     "usage": "tar -zxvf <var>FILE_NAME</var>",
     "description": "Extracts a tar.gz file.",
     "cmd": "tar -zxvf file.tar.gz",
-    "keywords": ["extract", "tar.gz", "unzip""]
+    "keywords": ["extract", "tar.gz", "unzip"]
   }
 ]
