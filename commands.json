@@ -207,5 +207,12 @@
     "description": "Extracts a tar.gz file.",
     "cmd": "tar -zxvf file.tar.gz",
     "keywords": ["extract", "tar.gz", "unzip"]
+  },
+  {
+    "title": "Get most used words in a file",
+    "usage": "tr -c '[:alnum:]' '[\n*]' < <var>INPUT_FILE</var> | sort | uniq -c | sort -nr",
+    "description": "",
+    "cmd": "",
+    "keywords": ["show", "calculate", "statistics", "stats", "data", "analyze", "display", "top"]
   }
 ]
