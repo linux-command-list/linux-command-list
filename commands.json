@@ -214,5 +214,12 @@
     "description": "Counts every word and displays a table with the most used words.",
     "cmd": "tr -c '[:alnum:]' '[\n*]' < wiki.txt | sort | uniq -c | sort -nr > most_used_wiki_words",
     "keywords": ["show", "calculate", "statistics", "stats", "data", "analyze", "display", "top"]
+  },
+  {
+    "title": "Find all Git repositories in subdirectories",
+    "usage": "find . -maxdepth <var>MAX_DEPTH</var> -type d -exec test -e '{}/.git' ';' -printf 'Git repository: %p\n'",
+    "description": "",
+    "cmd": "find . -maxdepth 5 -type d -exec test -e '{}/.git' ';' -printf 'Git repository: %p\n'",
+    "keywords": ["git", "repo", "find", "search", "analyze", "file", "folder"]
   }
 ]
