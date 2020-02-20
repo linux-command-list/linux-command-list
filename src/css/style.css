@@ -12,6 +12,14 @@ html,
   font-family: 'Roboto', sans-serif;
 }
 
+.hl {
+  color: #444;
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  background: #F0F0F0;
+}
+
 .command {
   box-sizing: border-box;
   display: flex;
