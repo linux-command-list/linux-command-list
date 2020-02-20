@@ -1,0 +1,225 @@
+[{
+    "title": "Show size of current folder in human readable format",
+    "usage": "du -sh",
+    "description": "",
+    "cmd": "du -sh",
+    "keywords": ["directory", "folder", "size"]
+  },
+  {
+    "title": "Show every file with their permissions",
+    "usage": "ls -la",
+    "description": "",
+    "cmd": "ls -la",
+    "keywords": ["file", "permission", "list"]
+  },
+  {
+    "title": "Download every file listed in list.txt with 2 tries and a timeout of 2 seconds",
+    "usage": "wget -v -t <var>TRIES</var> --timeout <var>TIMEOUT_IN_SECONDS</var> -i <var>FILENAME</var>",
+    "description": "",
+    "cmd": "wget -v -t 2 --timeout 2 -i list.txt",
+    "keywords": ["download", "list", "foreach"]
+  },
+  {
+    "title": "Print the first column of a csv or other files with a similar structure",
+    "usage": "awk -F '<var>SEPERATOR</var>' '{print $<var>COLUMN_NUMBER</var>}' <var>FILE</var>",
+    "description": "",
+    "cmd": "awk -F ',' '{print $1}' list.csv",
+    "keywords": ["data", "list", "bigdata", "analyze", "search"]
+  },
+  {
+    "title": "Find all fils which match the search in the current directory",
+    "usage": "find . -type f -name <var>SEARCH</var>",
+    "description": "<var>SEARCH</var> supports wildcards.",
+    "cmd": "find . -type f -name *.txt",
+    "keywords": ["find", "list", "get", "search"]
+  },
+  {
+    "title": "Display the content of a file with up and down navigation",
+    "usage": "less <var>FILE</var>",
+    "description": "",
+    "cmd": "less file.txt",
+    "keywords": ["find", "list", "search"]
+  },
+  {
+    "title": "Output the content of a file",
+    "usage": "cat <var>FILE</var>",
+    "description": "",
+    "cmd": "cat file.txt",
+    "keywords": ["display", "show"]
+  },
+  {
+    "title": "Search for content in a file (with color output and scrollable pages)",
+    "usage": "grep --color=always '<var>SEARCH</var>' <var>FILE</var> | less -R",
+    "description": "",
+    "cmd": "grep --color=always 'search me' file.txt | less -R",
+    "keywords": ["search", "analyze", "data"]
+  },
+  {
+    "title": "Search for content in a file (with color output)",
+    "usage": "grep --color=always '<var>SEARCH</var>' <var>FILE</var>",
+    "description": "",
+    "cmd": "grep --color=always 'search me' file.txt",
+    "keywords": ["search", "analyze", "data"]
+  },
+  {
+    "title": "Search for content in a file",
+    "usage": "grep '<var>SEARCH</var>' <var>FILE</var>",
+    "description": "",
+    "cmd": "grep 'search me' file.txt",
+    "keywords": ["search", "analyze", "data"]
+  },
+  {
+    "title": "Show which process is using a port",
+    "usage": "netstat -ltnp | grep ':<var>PORT_NUMBER</var> '",
+    "description": "",
+    "cmd": "netstat -ltnp | grep ':80'",
+    "keywords": ["listening", "ps", "pid"]
+  },
+  {
+    "title": "Restart all docker containers",
+    "usage": "docker restart $(docker ps -a -q)'",
+    "description": "",
+    "cmd": "docker restart $(docker ps -a -q)'",
+    "keywords": ["docker", "ps"]
+  },
+  {
+    "title": "Print current path",
+    "usage": "pwd",
+    "description": "Prints the current directory path to the console.",
+    "cmd": "",
+    "keywords": ["display", "show"]
+  },
+  {
+    "title": "Force kill a process",
+    "usage": "kill -9 <var>PROCESS_PID</var>",
+    "description": "Forcefully terminate a process.",
+    "cmd": "kill -9 1337",
+    "keywords": ["close", "terminate"]
+  },
+  {
+    "title": "Kill all processes",
+    "usage": "kill -9 -1",
+    "description": "USE WITH CAUTION! Forcefully terminates every process except the kill process itself.",
+    "cmd": "",
+    "keywords": ["close", "terminate"]
+  },
+  {
+    "title": "Show a calendar in the terminal",
+    "usage": "cal",
+    "description": "Prints an ASCII calendar to the console. Useful to see which day a date is.",
+    "cmd": "",
+    "keywords": ["organizing"]
+  },
+  {
+    "title": "Sort a file alphabetically",
+    "usage": "sort <var>FILENAME</var> > <var>FILENAME_SORTED</var>",
+    "description": "",
+    "cmd": "sort file.txt",
+    "keywords": ["modify"]
+  },
+  {
+    "title": "Show PID of a process by name",
+    "usage": "ps -e | grep <var>PROCESS_NAME</var>",
+    "description": "",
+    "cmd": "ps -e | grep bash",
+    "keywords": ["get", "print", "find", "search"]
+  },
+  {
+    "title": "Show free memory space",
+    "usage": "free -h",
+    "description": "Prints the free memory space in a human readable format.",
+    "cmd": "",
+    "keywords": ["get", "print", "ram", "monitor", "swap"]
+  },
+  {
+    "title": "Repeat previous command with sudo rights",
+    "usage": "sudo !!",
+    "description": "Repeats the previous command with sudo privileges",
+    "cmd": "",
+    "keywords": ["superuser", "admin", "redo", "history"]
+  },
+  {
+    "title": "Repeat command from history",
+    "usage": "!<var>HISTORY_NUMBER</var>",
+    "description": "Get the history number of a command with 'history'",
+    "cmd": "",
+    "keywords": ["redo"]
+  },
+  {
+    "title": "Show history",
+    "usage": "history",
+    "description": "Shows the history of the terminal session.",
+    "cmd": "",
+    "keywords": ["history", "display"]
+  },
+  {
+    "title": "Forcefully remove a directory",
+    "usage": "rm -Rf <var>DIRECTORY_NAME</var>",
+    "description": "Removes a directory forcefully.",
+    "cmd": "rm -Rf folderName",
+    "keywords": ["delete", "folder"]
+  },
+  {
+    "title": "Look through the process list",
+    "usage": "ps -e | less",
+    "description": "",
+    "cmd": "",
+    "keywords": ["display", "show", "list"]
+  },
+  {
+    "title": "Shutdown immediately",
+    "usage": "shutdown now",
+    "description": "",
+    "cmd": "",
+    "keywords": ["power", "off", "terminate"]
+  },
+  {
+    "title": "Cancel a shutdown",
+    "usage": "shutdown -c",
+    "description": "",
+    "cmd": "",
+    "keywords": ["power", "off", "terminate", "cancel"]
+  },
+  {
+    "title": "Start a Docker-Compose routine",
+    "usage": "docker-compose up -d",
+    "description": "Start a Docker-Compose routine as well as detach session",
+    "cmd": "",
+    "keywords": ["docker-compose", "start", "up", "docker"]
+  },
+  {
+    "title": "Stop a Docker-Compose routine",
+    "usage": "docker-compose down -d",
+    "description": "Stop a Docker-Compose routine as well as detach session",
+    "cmd": "",
+    "keywords": ["docker-compose", "start", "down", "docker"]
+  },
+  {
+    "title": "Remove empty directory",
+    "usage": "rmdir <var>DIRECTORY_NAME</var>",
+    "description": "Removes given empty directory",
+    "cmd": "",
+    "keywords": ["directory", "remove", "delete", "filesystem"]
+  },
+  {
+    "title": "Extract tar.gz file",
+    "usage": "tar -zxvf <var>FILE_NAME</var>",
+    "description": "Extracts a tar.gz file.",
+    "cmd": "tar -zxvf file.tar.gz",
+    "keywords": ["extract", "tar.gz", "unzip"]
+  },
+  {
+    "title": "Get most used words in a file",
+    "usage": "tr -c '[:alnum:]' '[\n*]' < <var>INPUT_FILE</var> | sort | uniq -c | sort -nr",
+    "description": "Counts every word and displays a table with the most used words.",
+    "cmd": "tr -c '[:alnum:]' '[\n*]' < wiki.txt | sort | uniq -c | sort -nr > most_used_wiki_words",
+    "keywords": ["show", "calculate", "statistics", "stats", "data", "analyze", "display", "top"]
+  },
+  {
+    "title": "Find all Git repositories in subdirectories",
+    "usage": "find . -maxdepth <var>MAX_DEPTH</var> -type d -exec test -e '{}/.git' ';' -printf 'Git repository: %p\n'",
+    "description": "",
+    "cmd": "find . -maxdepth 5 -type d -exec test -e '{}/.git' ';' -printf 'Git repository: %p\n'",
+    "keywords": ["git", "repo", "find", "search", "analyze", "file", "folder"]
+  }
+]
